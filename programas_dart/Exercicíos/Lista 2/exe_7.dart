@@ -1,0 +1,1 @@
+//Questão 07: Escreva um programa com uma função que receba um vetor como parâmetro e calcule a média dos valores contidos no vetor. Obs.: O tamanho do vetor deve ser informado pelo usuário.

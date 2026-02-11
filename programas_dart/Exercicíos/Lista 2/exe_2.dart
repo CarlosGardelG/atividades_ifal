@@ -1,0 +1,1 @@
+//Questão 02: Escreva um programa com uma função que receba um número e determine se esse número é par ou ímpar.

@@ -1,0 +1,1 @@
+//Questão 01: Escreva um programa com uma função que calcule a idade do usuário. Para isso, o programa deve ler o ano de nascimento, o ano atual e depois mostrar a idade. Obs: O ano deve ser informado no formato AAAA (ex.: 1980).

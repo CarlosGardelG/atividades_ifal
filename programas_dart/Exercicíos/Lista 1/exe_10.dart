@@ -1,0 +1,1 @@
+//Questão 10: Escreva um programa que leia um conjunto de números e determine quantos números pares foram digitados. O programa deve ler as idades até o usuário digitar -1.
