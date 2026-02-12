@@ -12,7 +12,10 @@ void main(){
   if (num1 > num2){
     print ("$num1 > $num2, logo $num1 é o maior número");
   }
-  else {
+  else if (num2 > num1){
     print ("$num2 > $num1, logo $num2 é o maior número");
+  }
+  else{
+    print ("$num1 = $num2, logo os números são iguais");
   }
 }
