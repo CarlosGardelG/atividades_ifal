@@ -1,6 +1,7 @@
 Como utilizar Shield.io (https://shields.io/badges):
-1. badgeContent - path: Nome da linguagem - cor (hex);
+1. badgeContent - path: Nome da linguagem-cor (hex);
 2. style: for-the-badge;
 3. logo: Nome da logo (Simple Icons, https://simpleicons.org/);
 4. logo_color: cor (hex, https://simpleicons.org/)
+
 
