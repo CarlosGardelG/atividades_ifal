@@ -4,4 +4,121 @@ Como utilizar Shield.io (https://shields.io/badges):
 3. logo: Nome da logo (Simple Icons, https://simpleicons.org/);
 4. logo_color: cor (hex, https://simpleicons.org/)
 
+exe_2
+//Questão 02: Escreva um programa com uma função que receba um número e determine se esse número é par ou ímpar.
+import 'dart:io';
+bool numpOUimp(int numFUN){
+  if (numFUN % 2 == 0){
+    return true;
+  }
+  else{
+    return false;
+  }
+}
+void main(){
+  print ("Digite um número qualquer: ");
+  int numQ = int.parse(stdin.readLineSync()!);
+  
+  bool num = numpOUimp(numQ);
+  if (num == true){
+    print("\nDe acordo com a função, o número $numQ recebeu valor $num. Portanto, $numQ é par!");
+  }
+  else if (num == false){
+    print("\nDe acordo com a função, o número $numQ recebeu valor $num. Portanto, $numQ é impar!");
+  }
+}
 
+/*Questão 03: Escreva um programa com uma função que receba o salário de um funcionário e calcule o imposto que ele deve pagar. Utilize os seguintes valores para calcular o imposto:
+• Até R$ 2.000,00 – Isento de imposto
+• De R$ 2.000,01 até R$ 3.500,00 – 15% de imposto
+• De R$ 3.500,01 até R$ 5.000,00 – 22% de imposto
+• Acima de R$ 5.000,01 – 30% de imposto*/
+
+import 'dart:io';
+double SalDES (double salFUN){
+  if (salFUN <= 2000.00){
+    return salFUN;
+  }
+  else if (salFUN >= 2000.01 && salFUN < 3500.00){
+    return salFUN -= (salFUN * (15/100));
+  }
+  else if (salFUN >= 3500.01 && salFUN < 5000.00){
+    return salFUN -= (salFUN * (22/100));
+  }
+  else{
+    return salFUN -= (salFUN * (30/100));
+  }
+  
+}
+void main(){
+  print("Digite o valor do seu salário: ");
+  double sal = double.parse(stdin.readLineSync()!);
+  double sal2 = SalDES(sal);
+  
+  print ("\nDe acordo com a nossa função, você receberá, após o devidos impostos: R\$$sal2!");
+}
+
+/*Questão 04: Escreva um programa com funções para calcular a área (b x h) e o perímetro de um retângulo (2b+2h). Forneça as seguintes opções ao usuário:
+1. Calcular a área do retângulo
+2. Calcular o perímetro do retângulo*/
+import 'dart:io';   
+/*
+void calculateRectangle(double base, double height, void Function(double, double) callback) {
+  double area = base * height;
+  double perimeter = 2 * base + 2 * height;
+  callback(area, perimeter);
+}
+
+void main() {
+  print('Digite a base do retângulo:');
+  double base = double.parse(stdin.readLineSync()!);
+  
+  print('Digite a altura do retângulo:');
+  double height = double.parse(stdin.readLineSync()!);
+  
+  calculateRectangle(base, height, (area, perimeter) {
+    print('Área: $area');
+    print('Perímetro: $perimeter');
+  });*/
+
+/*
+Map<String, double> calcularRetangulo(double base, double altura) {
+  double area = base * altura;
+  double perimetro = 2 * (base + altura);
+
+  return {
+    'area': area,
+    'perimetro': perimetro,
+  };
+}
+
+void main() {
+  double base = 5;
+  double altura = 3;
+
+  var resultado = calcularRetangulo(base, altura);
+
+  double area = resultado['area']!;
+  double perimetro = resultado['perimetro']!;
+
+  print('Área: $area');
+  print('Perímetro: $perimetro');
+}*/
+
+/*
+(double, double) calcularRetangulo(double base, double altura) {
+  double area = base * altura;
+  double perimetro = 2 * (base + altura);
+
+  return (area, perimetro);
+}
+
+void main() {
+  double base = 5;
+  double altura = 3;
+
+  var (area, perimetro) = calcularRetangulo(base, altura);
+
+  print('Área: $area');
+  print('Perímetro: $perimetro');
+}*/
