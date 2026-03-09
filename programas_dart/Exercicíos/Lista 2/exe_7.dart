@@ -8,8 +8,8 @@ void main(){
   
   for (int i = 0; i < tamanho; i++){
     print("\nEscreva o valor na posição $i:");
-    /*
-    ///Primeira versão do código, feita com auxilío do Copilot, onde se faz desnecessário esse "if...else", já que o o código sempre retorna um valor diferente de nulo (por conta do "stdin.readLineSync()!"), então ele nunca receberá um valor nulo.
+
+    /*Primeira versão do código, feita com auxilío do Copilot, onde se faz desnecessário esse "if...else", já que o o código sempre retorna um valor diferente de nulo (por conta do "stdin.readLineSync()!"), então ele nunca receberá um valor nulo.
     double numList = double.parse(stdin.readLineSync()!);
     if (numList != null){
       listVal.add(numList);
@@ -19,11 +19,12 @@ void main(){
       i--;
     }*/
     
-    /*///Aqui, o código sempre retorna um valor diferente de nulo (por conta do "stdin.readLineSync()!"). Assim sendo, pode-se diretamente adicionar na lista.
+    /*Aqui, o código sempre retorna um valor diferente de nulo (por conta do "stdin.readLineSync()!"). Assim sendo, pode-se diretamente adicionar na lista.
     double numList = double.parse(stdin.readLineSync()!);
     listVal.add(numList);*/
 
     ///Aqui, o código pode retornar um valor nulo ou algo que não seja um número. Assim, o programa pede para o usuário colocar um número válido no lugar, e o "i--" faz com que o programa volte para a posição anterior, ou seja, ele não avança para a próxima posição do vetor até que o usuário coloque um valor válido.
+    
     double? numList = double.tryParse(stdin.readLineSync()!);
     if (numList != null){
       listVal.add(numList);
@@ -45,4 +46,3 @@ double calcularMedia(List <double> vetor){
   }
   return valor / vetor.length;
 }
-
