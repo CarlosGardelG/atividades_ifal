@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang = "en"> 
+   <head>
+        <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
+   </head>
+   <body>
+       <img
+           src="/programas_web/assets/images/image.png"
+           width = "240px"
+           height = "240px"
+           alt = "Firefox"/>
+       <form>
+           <!--Definindo um fieldset-->
+           <fieldset>
+               <!--Legenda para o fieldset-->
+               <legend>Configurações da sua pizza</legend>
+
+
+               <label for = "Sabor"></label>Escolha o sabor:</label>
+               <select id = "Sabor" name = "Sabor">
+                   <optgroup label = "Sabores Tradicionais">
+                       <option value = "1">Calabresa</option>
+                       <option value = "2">Portuguesa</option>
+                       <option value = "3">Frango Catupiry</option>
+                       <option value = "4">Quatro Queijo</option>
+                       <option value = "5">Carne de Sol</option>
+                   </optgroup>
+                   <optgroup label = "Sabores Especiais">
+                       <option value = "5">Abacaxi</option>
+                       <option value = "6">Chocolate</option>
+                   </optgroup>
+               </select>
+
+
+               <br />
+               <label for = "Quantidade">Quantidade</label>
+               <input type = "number" id = "Quantidade" min = "1" max = "10" required/>
+
+
+               <br />
+               <label for = "borda_recheada"></label>Borda Recheada</label>
+               <input
+                   type = "checkbox"
+                   id = "borda_recheada"
+                   name = "borda_recheada"
+                   checked               
+               />
+           </fieldset>
+
+
+       <br />
+       <label for = "observacoes">Observações</label>
+       <br />
+       <textarea of = "observacoes" placeholder = "Digite sua observação aqui: "
+       cols = "40"
+       rows = "20"></textarea>
+       </fieldset>
+
+
+
+
+       <fieldset>
+           <legend>Dados do Cliente</legend>
+           <label for = "nome">Nome Completo:</label>
+           <input id = "nome" type = "text"
+           <br />
+
+
+           <label for = "email">E-mail:</label>
+           <input id = "email" type = "email">
+       </fieldset>
+   </form>
+
+
+
+
+   </body>
+</html>
+
