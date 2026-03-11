@@ -3,6 +3,8 @@
 ![Static Badge](https://img.shields.io/badge/-C-%23A8B9CC?style=for-the-badge&logo=c&logoColor=white)
 ![Static Badge](https://img.shields.io/badge/-Java-yellow?style=for-the-badge&logo=intellijidea)
 ![Static Badge](https://img.shields.io/badge/Dart-%230175C2?style=for-the-badge&logo=dart)
+![Static Badge](https://img.shields.io/badge/flutter-%2302569B?style=for-the-badge&logo=flutter&logoColor=white)
+![Static Badge](https://img.shields.io/badge/html-%23E34F26?style=for-the-badge&logo=html5&logoColor=white)
 
 ## Sobre o Repositório
 Aqui estão apenas **alguns programas e códigos** feitos durante os três anos do meu curso de Técnico em Informática pelo IFAL, sem grandes projetos. Tentei organizar com base nos tipos de linguagens que foram utilizadas durante meu período estudando lá.
