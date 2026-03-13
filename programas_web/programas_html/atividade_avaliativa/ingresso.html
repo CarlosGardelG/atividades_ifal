@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingressos - Copa do Mundo</title>
+</head>
+
+<header>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="sedes.html">Sedes</a>
+            <a href="grupos.html">Grupos</a>
+            <a href="ingresso.html">QUERO ASSISTIR AO VIVO!</a>
+        </nav>
+        <hr>
+    </header>
+    
+<main>
+    <form>
+           <!--Definindo um fieldset-->
+           <fieldset>
+               <!--Legenda para o fieldset-->
+               <legend><strong>COMPRAR INGRESSO</strong></legend>
+               <br><label for = "selecao"></label>Seleção que irá torcer:</label>
+               <select id = "selecao" name = "selecao">
+                   <optgroup label = "Sabores Tradicionais">
+                       <option value = "1">Calabresa</option>
+                       <option value = "2">Portuguesa</option>
+                       <option value = "3">Frango Catupiry</option>
+                       <option value = "4">Quatro Queijo</option>
+                       <option value = "5">Carne de Sol</option>
+                   </optgroup>
+               </select>
+
+
+               <br />
+               <label for = "Quantidade">Quantidade de ingressos:</label>
+               <input type = "number" id = "Quantidade" min = "1" max = "10" required/>
+           </fieldset>
+
+
+       <br />
+       <label for = "observacoes">Observações</label>
+       <br />
+       <textarea of = "observacoes" placeholder = "Digite sua observação aqui: "
+       cols = "40"
+       rows = "20"></textarea>
+       </fieldset>
+       </form>
+</main>
+
+
+<footer>
+    <hr>
+    <p>&copy; 2026 Carlos Gardel - 913 | Todos os direitos resevados.</p>        
+    <p>Contato: cgga1@aluno.ifal.edu.br</p>        
+    <p><a href="https://www.fifa.com/" target="_blank">Site da FIFA</a></p>
+</footer>
